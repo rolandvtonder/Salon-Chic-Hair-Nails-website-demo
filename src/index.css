@@ -20,7 +20,8 @@
   --font-serif: "Libre Caslon Condensed", "Times New Roman", serif;
   --font-script: "Pinyon Script", cursive;
 
-  --text-display: clamp(3.4rem, 13vw, 12.5rem);
+  /* Capped by height too (14svh), so the hero headline still fits on wide-but-short screens such as tablets in landscape */
+  --text-display: clamp(3rem, min(13vw, 14svh), 12.5rem);
   --text-display--line-height: 0.84;
   --text-title: clamp(2.6rem, 8vw, 6.5rem);
   --text-title--line-height: 0.9;

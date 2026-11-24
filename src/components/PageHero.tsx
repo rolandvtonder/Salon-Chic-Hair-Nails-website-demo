@@ -65,7 +65,7 @@ export function PageHero({
         <div className="grid items-end gap-8 lg:grid-cols-[1fr_26rem]">
           <Headline lines={lines} className="text-display" />
           <div className="space-y-6">
-            <p className="text-lede text-cream/85">{intro}</p>
+            <p className="text-lede text-cream/85 max-lg:[@media(max-height:860px)]:hidden">{intro}</p>
             <BookButtons service={service} />
           </div>
         </div>

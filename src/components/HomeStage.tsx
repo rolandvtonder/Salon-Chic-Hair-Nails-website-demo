@@ -174,8 +174,8 @@ function MotionStage() {
           <div className="grid items-end gap-8 lg:grid-cols-[1fr_24rem]">
             <Headline lines={home.headline} className="text-display tracking-[-0.01em]" />
             <div className="space-y-5 pb-2">
-              <p className="text-lede text-cream/85">{home.intro}</p>
-              <div className="rounded-2xl border border-cream/20 bg-ink/40 p-5 backdrop-blur-md">
+              <p className="text-lede text-cream/85 max-lg:[@media(max-height:860px)]:hidden">{home.intro}</p>
+              <div className="rounded-2xl border border-cream/20 bg-ink/40 p-5 backdrop-blur-md [@media(max-height:520px)]:hidden">
                 <p className="text-[1.6rem] uppercase italic leading-none">Book your chair</p>
                 <p className="mt-2 text-sm tracking-wide text-cream/75">
                   Bookings only · {salon.hours[0].days} {salon.hours[0].time}
